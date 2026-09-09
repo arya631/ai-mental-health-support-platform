@@ -1,0 +1,290 @@
+.resources-page {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.resources-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+
+.resources-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.resources-icon {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf3ff;
+  border-radius: 50%;
+  font-size: 35px;
+}
+
+.resources-header h1 {
+  margin: 18px 0 10px;
+  color: #222;
+  font-size: 32px;
+}
+
+.resources-header p {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Personalized Box */
+
+.personalized-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px;
+  margin-bottom: 30px;
+  background: #eef6ff;
+  border-left: 5px solid #4a90e2;
+  border-radius: 10px;
+}
+
+.personalized-icon {
+  font-size: 35px;
+}
+
+.personalized-box h2 {
+  margin: 0 0 7px;
+  color: #222;
+  font-size: 20px;
+}
+
+.personalized-box p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Categories */
+
+.category-section {
+  margin-bottom: 30px;
+}
+
+.category-section h2 {
+  margin-bottom: 18px;
+  color: #222;
+  font-size: 21px;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  padding: 10px 17px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  background: white;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.category-btn:hover {
+  border-color: #4a90e2;
+  color: #4a90e2;
+}
+
+.category-btn.active {
+  background: #4a90e2;
+  border-color: #4a90e2;
+  color: white;
+}
+
+/* Resource Heading */
+
+.resource-heading {
+  margin-bottom: 20px;
+}
+
+.resource-heading h2 {
+  margin: 0 0 5px;
+  color: #222;
+}
+
+.resource-heading p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Resource Grid */
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Resource Card */
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+  background: white;
+  border-radius: 13px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+}
+
+.resource-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resource-emoji {
+  font-size: 38px;
+}
+
+.resource-type {
+  padding: 5px 10px;
+  background: #eef6ff;
+  color: #4a90e2;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.resource-card h3 {
+  margin: 18px 0 10px;
+  color: #222;
+  font-size: 18px;
+}
+
+.resource-card p {
+  margin: 0 0 20px;
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.read-btn {
+  margin-top: auto;
+  padding: 11px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4a90e2;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.read-btn:hover {
+  background: #357abd;
+}
+
+/* Empty */
+
+.empty-resources {
+  padding: 50px 20px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+}
+
+.empty-resources div {
+  font-size: 45px;
+}
+
+.empty-resources h3 {
+  color: #333;
+}
+
+.empty-resources p {
+  color: #777;
+}
+
+/* Support Box */
+
+.support-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+.support-box > span {
+  font-size: 25px;
+}
+
+.support-box strong {
+  color: #333;
+}
+
+.support-box p {
+  margin: 6px 0 0;
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .resources-page {
+    padding: 30px 10px;
+  }
+
+  .resources-container {
+    width: 95%;
+  }
+
+  .resources-header h1 {
+    font-size: 26px;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .personalized-box {
+    align-items: flex-start;
+  }
+
+  .category-buttons {
+    gap: 8px;
+  }
+
+  .category-btn {
+    font-size: 13px;
+  }
+}

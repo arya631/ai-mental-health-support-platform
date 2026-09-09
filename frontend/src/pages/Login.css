@@ -1,0 +1,213 @@
+
+.auth-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #e8f5f2, #f4f8f7);
+  box-sizing: border-box;
+}
+
+/* Login Card */
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+/* Logo */
+
+.auth-logo {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+  color: #2f8f83;
+  margin-bottom: 25px;
+}
+
+/* Heading */
+
+.auth-card h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  color: #243b3a;
+  font-weight: 700;
+}
+
+/* Description */
+
+.auth-description {
+  text-align: center;
+  color: #71817f;
+  font-size: 15px;
+  margin: 10px 0 30px;
+  line-height: 1.6;
+}
+
+/* Labels */
+
+.auth-card label {
+  display: block;
+  margin-bottom: 8px;
+  color: #344a47;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Inputs */
+
+.auth-card input {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  margin-bottom: 20px;
+  border: 1px solid #d5e1df;
+  border-radius: 10px;
+  background: #fafdfc;
+  color: #263b39;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.25s ease;
+}
+
+.auth-card input::placeholder {
+  color: #9aa9a7;
+}
+
+/* Focus */
+
+.auth-card input:focus {
+  border-color: #2f8f83;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(47, 143, 131, 0.1);
+}
+
+/* Validation Error */
+
+.error-message {
+  display: block;
+  color: #d9534f;
+  font-size: 12px;
+  margin-top: -14px;
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+/* Forgot Password */
+
+.forgot-password {
+  text-align: right;
+  margin-top: -8px;
+  margin-bottom: 22px;
+}
+
+.forgot-password a {
+  color: #2f8f83;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+
+.auth-btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: #2f8f83;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.auth-btn:hover {
+  background: #26796f;
+  transform: translateY(-1px);
+}
+
+.auth-btn:active {
+  transform: translateY(0);
+}
+
+/* Account Switch */
+
+.auth-switch {
+  text-align: center;
+  margin: 25px 0 18px;
+  color: #71817f;
+  font-size: 14px;
+}
+
+.auth-switch a {
+  color: #2f8f83;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+/* Back Home */
+
+.back-home {
+  display: block;
+  text-align: center;
+  color: #657673;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.back-home:hover {
+  color: #2f8f83;
+}
+
+/* Responsive */
+
+@media (max-width: 500px) {
+  .auth-page {
+    padding: 20px 15px;
+  }
+
+  .auth-card {
+    padding: 30px 22px;
+    border-radius: 16px;
+  }
+
+  .auth-logo {
+    font-size: 24px;
+  }
+
+  .auth-card h1 {
+    font-size: 26px;
+  }
+
+  .auth-description {
+    font-size: 14px;
+  }
+
+  .auth-card input {
+    height: 46px;
+  }
+
+  .auth-btn {
+    height: 48px;
+  }
+}

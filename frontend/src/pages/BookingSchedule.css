@@ -1,0 +1,263 @@
+.schedule-page {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.schedule-container {
+  width: 90%;
+  max-width: 750px;
+  margin: auto;
+}
+
+.schedule-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.schedule-icon {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf3ff;
+  border-radius: 50%;
+  font-size: 35px;
+}
+
+.schedule-header h1 {
+  margin: 18px 0 10px;
+  color: #222;
+  font-size: 32px;
+}
+
+.schedule-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Confirmation */
+
+.confirmation-card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  margin-bottom: 25px;
+}
+
+.confirmation-icon {
+  font-size: 50px;
+}
+
+.confirmation-card h2 {
+  margin: 15px 0 8px;
+  color: #222;
+}
+
+.confirmation-card p {
+  color: #666;
+}
+
+.booking-id {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #eef6ff;
+  border-radius: 10px;
+}
+
+.booking-id span {
+  font-size: 13px;
+  color: #666;
+}
+
+.booking-id strong {
+  margin-top: 5px;
+  color: #4a90e2;
+  font-size: 20px;
+}
+
+/* Schedule Card */
+
+.schedule-card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.schedule-card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #222;
+  text-align: center;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row span {
+  color: #666;
+}
+
+.detail-row strong {
+  color: #222;
+  text-align: right;
+}
+
+/* Status */
+
+.detail-row .status {
+  color: #238636;
+  background: #eaf8ee;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* Reason */
+
+.reason-box {
+  margin-top: 25px;
+  padding: 18px;
+  background: #f5f8fc;
+  border-radius: 10px;
+}
+
+.reason-box h3 {
+  margin: 0 0 10px;
+  color: #4a90e2;
+  font-size: 17px;
+}
+
+.reason-box p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Buttons */
+
+.schedule-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.home-btn,
+.new-booking-btn {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.home-btn {
+  background: #222;
+  color: white;
+}
+
+.home-btn:hover {
+  background: #444;
+  transform: translateY(-2px);
+}
+
+.new-booking-btn {
+  background: #4a90e2;
+  color: white;
+}
+
+.new-booking-btn:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+}
+
+/* No booking */
+
+.no-booking {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.no-booking-icon {
+  font-size: 50px;
+}
+
+.no-booking h2 {
+  color: #222;
+}
+
+.no-booking p {
+  color: #666;
+}
+
+.no-booking button {
+  margin-top: 15px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #4a90e2;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .schedule-page {
+    padding: 30px 10px;
+  }
+
+  .schedule-container {
+    width: 95%;
+  }
+
+  .schedule-header h1 {
+    font-size: 26px;
+  }
+
+  .schedule-card,
+  .confirmation-card {
+    padding: 20px;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .detail-row strong {
+    text-align: left;
+  }
+
+  .schedule-actions {
+    flex-direction: column;
+  }
+
+  .home-btn,
+  .new-booking-btn {
+    width: 100%;
+  }
+}
